@@ -34,6 +34,7 @@ public class ConsoleExercises {
         System.out.println("What is the width?");
         String width = sc.nextLine();
 
+        //Refactor to double
         int lengthInt = Integer.parseInt(length);
         int widthInt = Integer.parseInt(width);
         int roomArea = lengthInt * widthInt;
