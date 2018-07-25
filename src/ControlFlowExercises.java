@@ -62,11 +62,11 @@ public class ControlFlowExercises {
         // ========= do-while 2^2 ======== \\
 
 
-        long numSq = 2;
-        do {
-            System.out.println(numSq);
-            numSq *= numSq;
-        } while (numSq <= 65536);
+//        long numSq = 2;
+//        do {
+//            System.out.println(numSq);
+//            numSq *= numSq;
+//        } while (numSq <= 65536);
 
 
         // ========= for loop ======== \\
@@ -98,6 +98,12 @@ public class ControlFlowExercises {
         Scanner sc = new Scanner(System.in);
 //        System.out.println("What number would you like to go up to?");
 //        int userInputTable = sc.nextInt();
+////
+//        souf-> " %-7d", i
+//        sout -> print("|");
+//        souf-> " %-8d", i * i
+//        sout -> print("|");
+//        souf-> " %-9d", i * i * i
 //
 //        System.out.println("Here is your table!");
 //        System.out.println(" number |  squared  |  cubed ");
@@ -106,6 +112,12 @@ public class ControlFlowExercises {
 //            System.out.println("  " + i + "     | " + (i * i) + "         |  " + (i * i * i));
 //
 //        }
+
+//         create a loop until the user doesnt want to enter in a number
+//        string confirmation = sc.next()
+//        if (!confirmation) {
+//          confirmation = false;
+//        } while (confirmation);
 
 
         // ========= Grade Scale ======== \\
@@ -159,7 +171,7 @@ public class ControlFlowExercises {
         System.out.println("Would you like to continue? [y/N]");
         String userInput = sc.nextLine();
 
-        boolean confirmation = userInput.equals("y");
+        boolean confirmation = userInput.equalsIgnoreCase("y");
 
         // ========= Second user input grade response  ======== \\
         if (confirmation) {
@@ -181,7 +193,7 @@ public class ControlFlowExercises {
                 System.out.println("B- falls between : 80 - 82");
             } else if (userSecondGrade >= 77) {
                 System.out.println("C+ falls between : 77 - 79");
-            } else if (userGrade >= 73) {
+            } else if (userSecondGrade >= 73) {
                 System.out.println("C falls between : 73 - 76");
             } else if (userSecondGrade >= 70) {
                 System.out.println("C- falls between : 70 - 72");
