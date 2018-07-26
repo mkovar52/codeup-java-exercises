@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Bob {
+
+    public static void main(String[] args){
+
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Hi, I\'m Bob. What do you want?");
+        String userResponse = sc.nextLine();
+
+        if (userResponse.endsWith("!") || userResponse.equals(userResponse.toUpperCase()) && !userResponse.isEmpty()) {
+            System.out.println("Whoa, chill out!");
+        } else if (userResponse.endsWith("?")){
+            System.out.println("Sure.");
+        } else if (userResponse.isEmpty()) {
+            System.out.println("Fine. Be that way!");
+        } else {
+            System.out.println("Whatever.");
+        }
+
+    }
+}
